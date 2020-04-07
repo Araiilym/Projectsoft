@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+<style>
+  body{
+  background-image: url('phone.jpeg'); 
+}
+
+.image-preview{
+  width: 350px;
+  height: 530px;
+  min-height: 100px;
+  border: 2px solid black;
+  margin: 3px;
+  
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #cccccc
+}
+.image-preview__image{
+  display: none;
+  width: 100%;
+  height:530px;
+}
+.button-container{
+  margin-left: 20px;
+
+}
+button{
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+.left-container{
+  background-color: #000000;
+  float: left;
+  border: 2px solid #cccccc ;
+  margin-left:200px; 
+  height: 575px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-weight: bold;
+
+}
+
+.rigth-container{
+  float: left;
+  border: 2px solid #cccccc ;
+  
+  height: 575px;
+  width: 500px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  background-color:#000000;
+  font-weight: bold;
+
+}
+.form-group{
+  padding: 4px;
+  padding-left:20px;
+}
+.firstScan{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid #cccccc;
+}
+.secondScan{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid #cccccc;
+}
+.fourthScan{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid #cccccc;
+}
+#MRZ{
+  padding-left: 130px;
+  padding-bottom: 10px;
+  margin-left:105px;
+}
+#number{
+  padding-left:130px;
+  margin-left: 38px; 
+}
+#firstName{
+  padding-left:130px;
+  margin-left: 66px;
+}
+#lastName{
+  padding-left:130px;
+  margin-left: 95px;
+}
+#nation{
+  padding-left:130px;
+  margin-left: 28px;
+}
+#gend{
+  margin-left: 76px;
+}
+#inputBirth{
+  margin-left: 9px;
+}
+#inputIssue{
+margin-left: 9px;
+
+}
+#inputExpir{
+  margin-left: 0px;
+}
+
+#inputAddress2{
+  margin-left:0px;
+  padding-left: 130px;
+}
+#inputAuth{
+  padding-left: 130px;
+  margin-left: 48px;
+}
+#inputArriv{
+  padding-left:90px;
+}
+#inputData{
+  margin-left: 128px;
+
+}
+#inputCountry{
+  margin-left: 98px;
+  padding-left:90px;
+}
+.convert-container{
+  margin: 15px;
+  height: 150px;
+}
+.database-container{
+  margin:15px;
+
+}
+
+</style>  
+  
+</head>
+<body>
+  <div class="left-container">
+      <label for="uploaded-photo"></label>
+    <input type="file" name="uploaded-photo" id="uploaded-photo" hidden="hidden" >
+
+    <div class="image-preview" id="imagePreview">
+      <img src="" alt="Image Preview" class="image-preview__image">
+      <span class="image-preview__default-text">Image Preview</span>
+    </div>
+    
+
+    <div class="button-container">
+      <button type="button" id="uploadbtn">Upload</button>
+    
+      <button type="button" id="startbtn">Start</button>
+    </div>
+  </div>
+
+  <div class="rigth-container">
+    <div class="convert-container">
+      <div class="row col-md-offser-3">
+      <div class="panel-body">
+        <div class="firstScan">
+          <form>
+            <div class="form-group">
+              <label for="MRZ">MRZ</label>
+              <input type="text" class="form-control" id="MRZ"/>           
+            </div>
+          </form>
+      </div>
+        <div class="secondScan">
+          <form>
+
+            <div class="form-group">
+              <label for="number">PASSPORT №</label>
+              <input type="text" class="form-control" id="number"/>           
+            </div>
+            <div class="form-group">
+              <label for="firstName">SURNAME</label>
+              <input type="text" class="form-control" id="firstName"/>           
+            </div>
+            <div class="form-group">
+              <label for="lastName">NAME</label>
+              <input type="text" class="form-control" id="lastName"/>           
+            </div>
+            <div class="form-group">
+              <label for="nation">NATIONALITY</label>
+              <input type="text" class="form-control" id="nation"/>           
+            </div>
+            <div class="form-group">
+              <label for="gend">GENDER</label>
+              <input type="text" class="form-control" id="gend"/>          
+            </div>
+            <div class="form-group">
+              <label for="inputBirth">DATE OF BIRTH</label>
+              <input type="text" class="form-control" id="inputBirth" placeholder="21.02.2000">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">PLACE OF BIRTH</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="inputIssue">DATE OF ISSUE</label>
+              <input type="text" class="form-control" id="inputIssue" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="inputExpir">DATE OF EXPIRY</label>
+              <input type="text" class="form-control" id="inputExpir" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="inputAuth">AUTHORITY</label>
+              <input type="text" class="form-control" id="inputAuth" placeholder="">
+            </div>
+
+          </form>
+        </div>
+        <div class="fourthScan">
+          <form>
+            <div class="form-group">
+              <label for="inputArriv">ARRIVAL/DEPARTURE</label>
+              <input type="text" class="form-control" id="inputArriv" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="inputCountry">COUNTRY</label>
+              <input type="text" class="form-control" id="inputCountry" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="inputData">DATA</label>
+              <input type="text" class="form-control" id="inputData" placeholder="">
+            </div>
+          </form>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="database-container">
+      <label id=database_template></label>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript">
+    const realFile=document.getElementById("uploaded-photo");
+    const customButton=document.getElementById("uploadbtn");
+    const customText=document.getElementById("custom-text");
+
+    const previewContainer=document.getElementById("imagePreview");
+    const previewImage=previewContainer.querySelector(".image-preview__image");
+    const previewDefaultText=previewContainer.querySelector(".image-preview__default-text");
+
+    realFile.addEventListener("change",function(){
+      const file=this.files[0];
+
+      if(file){
+        const reader=new FileReader();
+
+
+        previewDefaultText.style.display="none";
+        previewImage.style.display="block";
+
+        reader.addEventListener("load",function(){
+        previewImage.setAttribute("src", this.result);
+        });
+
+        reader.readAsDataURL(file);
+      }else{
+        previewDefaultText.style.display=null;
+        previewImage.style.display=null;
+        previewImage.setAttribute("scr","");
+      }
+
+    });
+
+
+    customButton.addEventListener("click",function(){
+      realFile.click();
+});
+    realFile.addEventListener("change",function(){
+      if(realFile.value){
+        customText.innerHTML=realFile.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+      }else{
+        customText.innerHTML="No file choosen.yet";
+      }
+    })
+
+    
+  </script>
+
+</body>
+</html>
