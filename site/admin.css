@@ -28,7 +28,7 @@ input[type=text],input[type=password]{
 .button-container{
 	width: 250px;
 	font-family: "Courier New", Courier, monospace;
-	margin-left: 550px;
+	margin-left: 530px;
 	color: white;
 
 }
@@ -46,7 +46,8 @@ a{
 	
 }
 span{
-	margin-top: 25px;
+	margin-top: 2px;
+    margin-left: 152px;
 	position: absolute;
 	padding-right: 100px; 
 
