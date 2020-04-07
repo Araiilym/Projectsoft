@@ -1,0 +1,53 @@
+body{
+	background-image: url(photodraw.ru-94237.png);
+	background-size: cover;
+
+}
+div.container_image{
+	background-image:url(aibyn2.png);
+	width: 300px;
+	height: 302px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.container{
+	width: 270px;
+	height: 180px;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+}
+input[type=text],input[type=password]{
+	width: 100%;
+	display: inline-block;
+	padding: 12px 20px;
+	margin: 8px 0;
+	font-family: "Courier New", Courier, monospace;
+}
+.button-container{
+	width: 250px;
+	font-family: "Courier New", Courier, monospace;
+	margin-left: 550px;
+	color: white;
+
+}
+button{
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	width: 90px;
+}
+a{
+	color: white;
+}
+#cancelbtn{
+	float: right;
+	
+	
+}
+span{
+	margin-top: 25px;
+	position: absolute;
+	padding-right: 100px; 
+
+}
