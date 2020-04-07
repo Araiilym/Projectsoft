@@ -6,24 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
    <title>software 1page</title>
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/style.css">
-  </head>
+   <style>
+    /* Image Designing Propoerties */
+     .image-preview{
+     	width:300px;
+     	height:400px;
+     	border:2px solid #dddddd;
+     	margin-top:15px;
+     	margin-left:200px;
+     	display:flex;
+     	float:inherit;
+
+     }
+     .upp{
+
+     	float:left;
+     
+     	
+     	
+
+     }
+     .myImg{
+
+     }
+     }
+
+     .myImg{
+     	
+
+     }
+</style>
 <body>
+	<h1> Scanning Passport</h1>
+	<div class ="upp">
+	<input type='file' name="upImg" id = "upImg" class ="inputfile" ></div>
+	<div class = "image-preview" id="imagePrev">
+	</br><img  src="#"  alt="" class="imgg"  height=400 width=300>
+	<script type="text/javascript">
+    /* The uploader form */
+   		window.addEventListener('load', function() {
+  			document.querySelector('input[type="file"]').addEventListener('change', function() {
+     		 if (this.files && this.files[0]) {
+        		  var img = document.querySelector('img');  // $('img')[0]
+          		  img.src = URL.createObjectURL(this.files[0]); // set src to blob url
+         		  img.onload = imageIsLoaded;
+      }
+  });
+});
 
-  <h1>lets startt</h1>
+function imageIsLoaded() { 
+  alert(this.src);  // blob url
+  // update width and height ...
+}
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-3.5.0.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+</script>
+
+
+
+
 </body>
 </html>
+ 
