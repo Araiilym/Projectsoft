@@ -1,0 +1,128 @@
+body{
+	background-image: url(photo6.jpg);
+	background-size: cover;
+}
+
+.image-preview{
+	width: 700px;
+	min-height: 100px;
+	border: 2px solid white;
+	margin: 15px;
+	
+
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	color: #cccccc
+}
+.image-preview__image{
+	display: none;
+	width: 100%;
+	height: 400px;
+}
+.button-container{
+	margin:15px;
+}
+div.logo{
+	float: left;
+	margin-left: 20px;
+}
+div.heading{
+	margin-right: 150px;
+}
+
+h1#kz{
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+
+}
+h2#retina-scanning{
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 0px;
+	
+}		
+
+button{
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+	padding: .8em 1em calc(.8em + 3px);
+	border-radius: 3px;
+	background: rgb(64,199,129);
+	box-shadow: 0 -3px rgb(53,167,110) inset;
+	transition: 0.2s;
+	 
+}
+.left-container{
+	float: left;
+	
+	margin: 5px;
+	height: 500px;
+	font-family: "Courier New", Courier, monospace;
+	color: white;
+	font-weight: bold;
+
+}
+.rigth-container{
+	float: left;
+	border: 2px solid white;
+	margin: 20px;
+	height: 500px;
+	width: 500px;
+	font-family: "Courier New", Courier, monospace;
+	color: white;
+	font-weight: bold;
+
+}
+.convert-container{
+	margin: 15px;
+	height: 130px;
+}
+.database-container{
+	margin:15px;
+}
+#nextpage-button{
+	float: right;
+	margin-right: 30px;
+	margin-top: 250px;
+}
+#nextpage-button,#uploadbtn,#startbtn:hover { background: rgb(53, 167, 110); }
+#nextpage-button,#uploadbtn,#startbtn:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.answer-container{
+	color: #06AA4B;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:35px;
+	font-size: 25px; 
+}
+#unsuccess{
+	color:red;
+}
+#convert-result{
+	border: 2px solid white;
+	height: 80px;
+	width: 420px;
+	margin-top: 10px;
+	background: black;
+}
+#database-result{
+	border: 2px solid white;
+	height: 80px;
+	width: 420px;
+	margin-top: 10px;
+	background: black;
+	
+}
