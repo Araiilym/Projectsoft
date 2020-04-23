@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,44 +6,50 @@
   <title></title>
 <style>
   body{
-  background-image: url('world-map-black-and-blue.jpg'); 
+  background-color: #000000;
 
 }
 
 .image-preview{
-  width: 350px;
-  height: 530px;
-  min-height: 100px;
-  border: 2px solid black;
-  margin: 3px;
-  
+  width: 300px;
+  height: 430px;
+  border: 2px solid white;
+  margin-top: 0px;
+  background-color: #2A2A30;
 
 
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #cccccc
+  color: #cccccc;
 }
 .image-preview__image{
   display: none;
   width: 100%;
-  height:530px;
+  height:430px;
 }
 .button-container{
-  margin-left: 20px;
+  margin-top: 10px;
+
 
 }
 button{
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
 }
 .left-container{
-  background-color: #000000;
+  
   float: left;
-  border: 2px solid #cccccc ;
-  margin-left:200px; 
-  height: 575px;
+  margin-left:40px; 
+
   font-family: "Courier New", Courier, monospace;
   color: white;
   font-weight: bold;
@@ -51,68 +58,64 @@ button{
 
 .rigth-container{
   float: left;
-  border: 2px solid #cccccc ;
-  
-  height: 575px;
-  width: 500px;
-  font-family: "Courier New", Courier, monospace;
   color: white;
   background-color:#000000;
   font-weight: bold;
 
 }
 .form-group{
-  padding: 4px;
-  padding-left:20px;
+
+}
+label{
+  text-align: center;
 }
 .firstScan{
-  padding-top: 5px;
-  padding-bottom: 5px;
+  
   border: 2px solid #cccccc;
 }
 .secondScan{
-  padding-top: 5px;
-  padding-bottom: 5px;
+  
   border: 2px solid #cccccc;
 }
 .fourthScan{
-  padding-top: 5px;
-  padding-bottom: 5px;
   border: 2px solid #cccccc;
+  
 }
 #MRZ{
   padding-left: 130px;
   padding-bottom: 10px;
-  margin-left:105px;
+
 }
 #number{
   padding-left:130px;
-  margin-left: 38px; 
 }
 #firstName{
   padding-left:130px;
-  margin-left: 66px;
+  
 }
 #lastName{
   padding-left:130px;
-  margin-left: 95px;
+  
 }
 #nation{
   padding-left:130px;
-  margin-left: 28px;
+  
 }
 #gend{
-  margin-left: 76px;
+  padding-left:130px;
+  
 }
 #inputBirth{
-  margin-left: 9px;
+  padding-left:130px;
 }
 #inputIssue{
-margin-left: 9px;
+  padding-left:130px;
+
 
 }
 #inputExpir{
-  margin-left: 0px;
+  padding-left:130px;
+  
 }
 
 #inputAddress2{
@@ -121,38 +124,92 @@ margin-left: 9px;
 }
 #inputAuth{
   padding-left: 130px;
-  margin-left: 48px;
+
 }
 #inputArriv{
   padding-left:90px;
 }
 #inputData{
-  margin-left: 128px;
+  
 
 }
 #inputCountry{
-  margin-left: 98px;
+  
   padding-left:90px;
 }
 .convert-container{
-  margin: 15px;
+  font-family: "Courier New", Courier, monospace;
+  
   height: 150px;
 }
 .database-container{
   margin:15px;
 
 }
+#retina-scanning{
+  color: white;
+}
+#logo{
+  float: right;
+}
+.pass-scan{
+  color:white;
+}
+.heading{
+  display: inline;
+}
+.sec{
+  font-size: 18px;
+}
 
+.pass-scan{
+  padding-left: 40px; 
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#logo{
+padding-right: 400px;}
+.centerr{
+  padding-left: 10px;
+  background-color: #000000;
+  background-image: "photo_2020-04-22_07-01-53.jpg";
+  font-size: 14.5px;
+}
+.form-control{
+  background-color: #000000;
+}
+.fourthScan{
+  float: right;
+  margin-right:300px;
+  margin-top: 315px;}
 </style>  
   
 </head>
 <body>
-  <h1>F.B.I Database </h1>
-  <h2>Passort Scanning</h2>
+  <img id="logo"style='height: 100px; width: 100px; margin-right: 4px;' src='aibyn2.png'/><h1 class='pass-scan'>F.B.I Database <div class="sec">Passport Scanning Profile</div></h1>
+  <div class="fourthScan">
+          <form>
+            <div class="form-group">
+              <div class="centerr">
+              <label for="inputArriv">ARRIVAL/DEPARTURE</label></div>
+              <input type="text" class="form-control" id="inputArriv" placeholder="">
+            </div>
+            <div class="form-group">
+              <div class="centerr">
+              <label for="inputCountry">COUNTRY</label></div>
+              <input type="text" class="form-control" id="inputCountry" placeholder="">
+            </div>
+            <div class="form-group">
+              <div class="centerr">
+              <label for="inputData">DATA</label></div>
+              <input type="text" class="form-control" id="inputData" placeholder="">
+            </div>
+          </form>
+        </div>
   <div class="left-container">
       <label for="uploaded-photo"></label>
     <input type="file" name="uploaded-photo" id="uploaded-photo" hidden="hidden" >
-
     <div class="image-preview" id="imagePreview">
       <img src="" alt="Image Preview" class="image-preview__image">
       <span class="image-preview__default-text">Image Preview</span>
@@ -173,7 +230,8 @@ margin-left: 9px;
         <div class="firstScan">
           <form>
             <div class="form-group">
-              <label for="MRZ">MRZ</label>
+              <div class="centerr">
+              <label for="MRZ">MRZ</label></div>
               <input type="text" class="form-control" id="MRZ"/>           
             </div>
           </form>
@@ -182,64 +240,59 @@ margin-left: 9px;
           <form>
 
             <div class="form-group">
-              <label for="number">PASSPORT №</label>
+              <div class="centerr">
+              <label for="number">Passport №</label></div>
               <input type="text" class="form-control" id="number"/>           
             </div>
             <div class="form-group">
-              <label for="firstName">SURNAME</label>
+              <div class="centerr">
+              <label for="firstName">Surname</label></div>
               <input type="text" class="form-control" id="firstName"/>           
             </div>
             <div class="form-group">
-              <label for="lastName">NAME</label>
+              <div class="centerr">
+              <label for="lastName">Name</label></div>
               <input type="text" class="form-control" id="lastName"/>           
             </div>
             <div class="form-group">
-              <label for="nation">NATIONALITY</label>
+              <div class="centerr">
+              <label for="nation">Nationality</label></div>
               <input type="text" class="form-control" id="nation"/>           
             </div>
             <div class="form-group">
-              <label for="gend">GENDER</label>
+              <div class="centerr">
+              <label for="gend">Gender</label></div>
               <input type="text" class="form-control" id="gend"/>          
             </div>
             <div class="form-group">
-              <label for="inputBirth">DATE OF BIRTH</label>
-              <input type="text" class="form-control" id="inputBirth" placeholder="21.02.2000">
+              <div class="centerr">
+              <label for="inputBirth">Date of birth</label></div>
+              <input type="text" class="form-control" id="inputBirth" placeholder="">
             </div>
             <div class="form-group">
-              <label for="inputAddress2">PLACE OF BIRTH</label>
+              <div class="centerr">
+              <label for="inputAddress2">Place of birth</label></div>
               <input type="text" class="form-control" id="inputAddress2" placeholder="">
             </div>
             <div class="form-group">
-              <label for="inputIssue">DATE OF ISSUE</label>
+              <div class="centerr">
+              <label for="inputIssue">Date of birth</label></div>
               <input type="text" class="form-control" id="inputIssue" placeholder="">
             </div>
             <div class="form-group">
-              <label for="inputExpir">DATE OF EXPIRY</label>
+              <div class="centerr">
+              <label for="inputExpir">Date of expiry</label></div>
               <input type="text" class="form-control" id="inputExpir" placeholder="">
             </div>
             <div class="form-group">
-              <label for="inputAuth">AUTHORITY</label>
+              <div class="centerr">
+              <label for="inputAuth">AUTHORITY</label></div>
               <input type="text" class="form-control" id="inputAuth" placeholder="">
             </div>
 
           </form>
         </div>
-        <div class="fourthScan">
-          <form>
-            <div class="form-group">
-              <label for="inputArriv">ARRIVAL/DEPARTURE</label>
-              <input type="text" class="form-control" id="inputArriv" placeholder="">
-            </div>
-            <div class="form-group">
-              <label for="inputCountry">COUNTRY</label>
-              <input type="text" class="form-control" id="inputCountry" placeholder="">
-            </div>
-            <div class="form-group">
-              <label for="inputData">DATA</label>
-              <input type="text" class="form-control" id="inputData" placeholder="">
-            </div>
-          </form>
-        </div>
+        
 
     </div>
     </div>
