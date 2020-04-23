@@ -11,6 +11,16 @@
 	    <label for="uploaded-photo"></label>
 		<input type="file" name="uploaded-photo" id="uploaded-photo" accept="image/png, image/jpeg" hidden="hidden" >
 
+
+		<div class="logo">
+			<p><img src="aibyn2.png"  width="150" height="135" alt="logo"></p>
+		</div>
+
+		<div class="heading">
+			<h1 id="kz">Kazakhstan Republic </h1>
+			<h2 id= "retina-scanning" >Retina Scanning Profile</h2>
+		</div>
+
 		<div class="image-preview" id="imagePreview">
 			<img src="" alt="Image Preview" class="image-preview__image">
 			<span class="image-preview__default-text">Image Preview</span>
@@ -19,7 +29,7 @@
 
 		<div class="button-container">
 			<button type="button" id="uploadbtn">Upload</button>
-			<span id="custom-text">no file choosen</span>
+			<span id="custom-text"></span>
 			<button type="button" id="startbtn">Start</button>
 		</div>
 	</div>
@@ -27,11 +37,19 @@
 	<div class="rigth-container">
 		<div class="convert-container">
 			<label id=convert_template>Convert image to template</label>
+			<div id="convert-result"></div>
 		</div>
 
 		<div class="database-container">
 			<label id=database_template>Template saved in database</label>
+			<div id="database-result"></div>
 		</div>
+
+		<div class="answer-container">
+		<span id="success">Succesful</span>
+		<span id="unsuccess">Unsuccesful</span>
+		</div>
+
 		<div>
 			<button type="button" id="nextpage-button">Next page</button>
 			
